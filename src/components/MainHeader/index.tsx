@@ -5,7 +5,12 @@ import * as S from './styles'
 const MainHeader = () => {
     return(
         <S.Container>
-            <h1>MainHeader</h1>
+            <S.Left>
+                <h1>Bem vindo <span>ao meu portfólio</span></h1>
+            </S.Left>
+            <S.Right>
+                <h1>toogle</h1>
+            </S.Right>
         </S.Container>
     )
 } 
