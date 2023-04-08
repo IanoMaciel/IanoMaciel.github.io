@@ -5,7 +5,7 @@ export const Container = styled.div`
     height: 100vh;
 
     grid-area: AS;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: #fff;
     border-right: 1px solid #D9D9D9;
     
 `
@@ -20,19 +20,22 @@ export const MenuItemLink = styled.a`
     display: flex;
     align-items: center;
 
-    padding: 10px;
+    margin: 10px 0;
+
+    padding: 5px 15px;
 
     font-weight: 400;
     font-size: 26px;
-    color: #FFFFFF;
+    color: #1E1E1E;
     
     text-decoration: none;
     transition: opacity .3s;
 
     &:hover {
-        opacity: .7;
-        background-color: rgba(255, 255, 255, 0.1);
-        color: #FEBC2E;
+        //opacity: .7;
+        border: 2px solid #000;
+        font-weight: 500;
+        color: #000;
         border-radius: 30px;
     }
 
