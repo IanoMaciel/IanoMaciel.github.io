@@ -1,20 +1,19 @@
 import React from "react"
-import Switch from 'react-switch'
-
+import { MdDarkMode, MdBrightnessHigh } from 'react-icons/md'
 // styles
 import * as S from './styles'
 
 const Toogle = () => {
     return(
         <S.Container>
-            <S.ToggleLabel>Light</S.ToggleLabel>
+            <MdBrightnessHigh/>
             <S.ToggleSelector 
                 onChange={() => console.log('trocou')}
                 checked={false}
                 uncheckedIcon={false}
                 checkedIcon={false}
             />
-            <S.ToggleLabel>Dark</S.ToggleLabel>
+            <MdDarkMode/>
         </S.Container>
     );
 }

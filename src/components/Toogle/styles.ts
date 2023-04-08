@@ -5,10 +5,11 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
 
-`
+    > svg {
+        font-size: 26px;
+        color: #000;
+    }
 
-export const ToggleLabel = styled.span`
-    color: '#000'
 `
 
 export const ToggleSelector = styled(Switch).attrs<ReactSwitchProps>(
