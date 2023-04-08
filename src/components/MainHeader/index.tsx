@@ -1,5 +1,7 @@
 import React from "react"
-
+// components
+import Toogle from "../Toogle"
+// styles
 import * as S from './styles'
 
 const MainHeader = () => {
@@ -9,7 +11,7 @@ const MainHeader = () => {
                 <h1>Bem vindo <span>ao meu portfólio</span></h1>
             </S.Left>
             <S.Right>
-                <h1>toogle</h1>
+                <Toogle/>
             </S.Right>
         </S.Container>
     )
