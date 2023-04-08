@@ -1,11 +1,19 @@
 import React from "react"
 
+// styles
 import * as S from './styles'
 
-const Content = () => {
+// pages
+import Sobre from "../../views/Sobre"
+
+interface IContentProps {
+    children: React.ReactNode;
+}
+
+const Content = ({ children }: IContentProps) => {
     return(
         <S.Container>
-            <h1>Content</h1>
+            { children }
         </S.Container>
     )
 } 
