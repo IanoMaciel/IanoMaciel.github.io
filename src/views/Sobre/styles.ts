@@ -8,11 +8,12 @@ export const Presentation = styled.div`
     h1 {
         font-size: 60px;
         font-weight: bold;
+        color: ${props => props.theme.colors.tertiary};
     }
 
     span {
         font-size: 25px;
-        color: #000;
+        color: ${props => props.theme.colors.secondary};
         font-weight: 400;
     }
 `
@@ -21,6 +22,7 @@ export const Information = styled.div`
     p {
         font-size: 25px;
         margin-top: 20px;
+        color: ${props => props.theme.colors.secondary}
     }
     margin: 50px 0; 
 `
@@ -45,7 +47,7 @@ export const Address = styled.div`
     h2 {
         font-weight: 400;
         font-size: 25px;
-        color: #000;
+        color: ${props => props.theme.colors.secondary};
         margin-bottom: 30px;
     }
 
@@ -57,7 +59,7 @@ export const Address = styled.div`
         
         font-size: 25px;
         font-weight: 400;
-        color: #000;
+        color: ${props => props.theme.colors.secondary};
         margin: 3px 0;
 
         svg {
@@ -77,6 +79,6 @@ export const Profile = styled.div`
 
         transform: translate(-1.5rem, -1.5ex);
     }
-    background-color: #E7E9EA;
+    background-color: ${props => props.theme.colors.secondary};
     border-radius: 50px 50px 50px 0;
 `
